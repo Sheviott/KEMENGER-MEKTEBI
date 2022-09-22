@@ -1,0 +1,195 @@
+//====================================================================================================
+.main-screen {
+    height: 100%;
+    width: 100%;
+    padding: 120px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: rem(10);
+    @media (min-width: $mobile) {
+        padding: 150px 0;
+        display: block;
+        position: relative;
+    }
+    @media (min-width: $tablet) {
+        padding: 270px 0;
+    }
+    &__background {
+        min-height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        margin-top: -80px;
+        &::after {
+            // position: absolute;
+            // content: url(../images/main/main-screen/5.png);
+            // bottom: 150px;
+            // z-index: -10;
+            // right: 50%;
+            // background-size: 10px 10px;
+        }
+        @media (min-width: $mobileSmall) {
+            margin-top: -120px;
+        }
+        @media (min-width: $mobile) {
+            margin-top: -200px;
+        }
+        @media (min-width: 1024px) {
+            position: absolute;
+            max-width: rem(1000);
+            bottom: 0;
+            right: 0;
+        }
+    }
+    &__background--right {
+        text-align: end;
+        position: relative;
+        float: right;
+        max-width: rem(300);
+        @include adaptiveValue("max-width", 500, 300);
+        @media (min-width: 1024px) {
+            max-width: rem(1072);
+        }
+    }
+    &__background--boy {
+        position: absolute;
+        z-index: 1;
+        bottom: 20px;
+        right: 40px;
+    }
+    &__background--vector {
+    }
+    &__container {
+    }
+    &__body {
+    }
+    &__title {
+        margin-bottom: rem(44);
+        max-width: rem(670);
+        span {
+            color: #018fa3;
+        }
+    }
+    &__text {
+        max-width: rem(532);
+        margin-bottom: rem(44);
+    }
+    &__button {
+    }
+}
+
+.directions {
+    &__container {
+    }
+    &__body {
+    }
+    &__info {
+    }
+    &__row {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: $mobile) {
+            flex-flow: row nowrap;
+            gap: 120px;
+        }
+    }
+    &__column {
+        border-radius: 30px;
+        max-width: rem(460);
+        @media (min-width: $mobile) {
+        }
+    }
+    &__text {
+        background-color: #fff7be;
+        padding: 25px;
+        margin-bottom: rem(65);
+        position: relative;
+        &--top {
+            &::after {
+                content: url("../images/main/directions/yellow-circle.svg");
+                position: absolute;
+                top: -50px;
+                left: -90px;
+                width: 100px;
+                height: 100px;
+                z-index: -1;
+            }
+        }
+        &--bottom {
+            &::after {
+                content: url("../images/main/directions/blue-circle.svg");
+                position: absolute;
+                bottom: 45px;
+                right: 20px;
+                width: 100px;
+                height: 100px;
+                z-index: -1;
+            }
+        }
+        @media (min-width: $mobile) {
+            height: 204px;
+            &--top {
+                span {
+                    position: relative;
+                    display: inline-block;
+                    bottom: -30px;
+                    left: -35px;
+                }
+            }
+            &--bottom {
+                span {
+                    position: relative;
+                    display: inline-block;
+                    bottom: -30px;
+                    left: -35px;
+                }
+            }
+        }
+    }
+    &__image {
+        margin-bottom: rem(65);
+        &--top {
+            position: relative;
+            padding-bottom: 0px;
+            &::after {
+                content: "";
+                background-image: url(../images/main/directions/dotted-line.svg);
+                position: absolute;
+                bottom: -30px;
+                z-index: -1;
+                left: 20px;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+        &--bottom {
+            order: 2;
+            @media (min-width:$mobile){
+                 order: 0;
+            }
+        }
+    }
+    &__content {
+    }
+    .content-circle {
+        &__row {
+        }
+        &__column {
+        }
+        &__icon {
+        }
+        &__name {
+        }
+        &__center-image {
+        }
+        &__image-bottom {
+        }
+    }
+}
+
+//====================================================================================================

@@ -1,0 +1,60 @@
+<div id="form" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="##" class="icon-close close-popup">
+        <span class="close"></span>
+      </a>
+      <div class="popup__body">
+        <div class="popup__title">
+          Заполните <span>форму</span> и мы обязательно свяжемся с Вами.
+        </div>
+        <form action="" class="popup__form form">
+          <input
+            autocomplete="off"
+            type="text"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Ваше имя..."
+            class="form__input"
+          />
+          <input
+            autocomplete="off"
+            type="tel"
+            name="form[]"
+            data-error="Ошибка"
+            placeholder="Ваш телефон..."
+            class="form__input"
+          />
+          <textarea
+            autocomplete="off"
+            name="form[]"
+            placeholder="Комментарий..."
+            data-error="Ошибка"
+            class="form__textarea"
+          ></textarea>
+          <a href="#thanks" type="submit" class="form__button btn popup-link">
+            Оставить заявку
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="thanks" class="popup">
+  <div class="popup__body">
+    <div class="popup__content">
+      <a href="##" class="icon-close close-popup">
+        <span class="close"></span>
+      </a>
+      <div class="popup__body">
+        <div class="popup__icon">
+          <img src="@img/main/popups/complite.svg" alt="" />
+        </div>
+        <div class="popup__text"><span>Спасибо</span> за заявку</div>
+        <div class="popup__text">
+          В ближайшее время мы <span>свяжемся</span> с Вами
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

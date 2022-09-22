@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Главная' })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', { })
+      <main class="page">
+        <section class="main-screen">
+          <div class="main-screen__container">
+            <div class="main-screen__body">
+              <div class="main-screen__title title">
+                <span>KEMENGER MEKTEBI</span> - центр интеллектуального развития
+              </div>
+              <div class="main-screen__text">
+                Обучение происходит на казахском и русском языках. При записи на
+                два или более курсов предусмотрена скидка. Запишитесь на
+                бесплатный пробный урок.
+              </div>
+              <a href="#form" class="main-screen__button btn popup-link">
+                Оставить заявку
+              </a>
+            </div>
+          </div>
+          <div class="main-screen__background">
+            <div class="main-screen__background--right">
+              <picture>
+                <source
+                  media="(max-width: 1024px)"
+                  srcset="@img/main/main-screen/image-mobile.png"
+                />
+                <img src="@img/main/main-screen/image-mobile.png" alt="" />
+              </picture>
+              <!-- <img
+                class="main-screen__background--boy"
+                src="@img/main/main-screen/boy.png"
+                alt=""
+              /> -->
+              <!-- <img
+                class="main-screen__background--vector"
+                src="@img/main/main-screen/yellow-vector.svg"
+                alt=""
+              /> -->
+            </div>
+          </div>
+        </section>
+        <section class="directions">
+          <div class="directions__container">
+            <div class="directions__body">
+              <div class="directions__info">
+                <div class="directions__row">
+                  <div class="directions__column directions__text directions__text--top">
+                    <span
+                      >В нашем центре работают профессиональные педагоги любящие
+                      детей и преданные своему делу. Мы помогаем детям
+                      совершенствовать свои интеллекуальные способности чтобы
+                      они могли познавать мир и делать его более красивым и
+                      добрым.</span
+                    >
+                  </div>
+                  <div class="directions__column directions__image directions__image--top">
+                    <img src="@img/main/directions/image-1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="directions__row">
+                  <div class="directions__column directions__image directions__image--bottom">
+                    <img src="@img/main/directions/image-2.jpg" alt="" />
+                  </div>
+                  <div class="directions__column directions__text directions__text--bottom">
+                    <span
+                      >В нашем центре работают профессиональные педагоги любящие
+                      детей и преданные своему делу. Мы помогаем детям
+                      совершенствовать свои интеллекуальные способности чтобы
+                      они могли познавать мир и делать его более красивым и
+                      добрым.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="directions__content content-circle">
+                <div class="content-circle__row">
+                  <div class="content-circle__column">
+                    <div class="content-circle__icon">
+                      <img src="@img/main/directions/brain.svg" alt="" />
+                    </div>
+                    <div class="content-circle__name">
+                      Ментальная арифметика
+                    </div>
+                  </div>
+                  <div class="content-circle__column">
+                    <div class="content-circle__icon">
+                      <img src="@img/main/directions/brain.svg" alt="" />
+                    </div>
+                    <div class="content-circle__name">
+                      Ментальная арифметика
+                    </div>
+                  </div>
+                </div>
+                <div class="content-circle__row">
+                  <div class="content-circle__column">
+                    <div class="content-circle__icon">
+                      <img src="@img/main/directions/brain.svg" alt="" />
+                    </div>
+                    <div class="content-circle__name">
+                      Ментальная арифметика
+                    </div>
+                  </div>
+                  <div class="content-circle__column">
+                    <div class="content-circle__icon">
+                      <img src="@img/main/directions/brain.svg" alt="" />
+                    </div>
+                    <div class="content-circle__name">
+                      Ментальная арифметика
+                    </div>
+                  </div>
+                </div>
+                <div class="content-circle__row">
+                  <div class="content-circle__column">
+                    <div class="content-circle__icon">
+                      <img src="@img/main/directions/brain.svg" alt="" />
+                    </div>
+                    <div class="content-circle__name">
+                      Ментальная арифметика
+                    </div>
+                  </div>
+                  <div class="content-circle__column">
+                    <div class="content-circle__icon">
+                      <img src="@img/main/directions/brain.svg" alt="" />
+                    </div>
+                    <div class="content-circle__name">
+                      Ментальная арифметика
+                    </div>
+                  </div>
+                </div>
+                <div class="content-circle__center-image">
+                  <img src="@img" alt="">
+                </div>
+                <div class="content-circle__image-bottom">
+                  <img src="@img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/footer.html', { }) @@include('html/popups.html', { })
+    </div>
+    @@include('html/script.html', { })
+  </body>
+</html>
