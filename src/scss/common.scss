@@ -1,3 +1,11 @@
+.header {
+  @media (min-width:$tablet){
+    a {
+      &:hover{text-decoration: underline;}
+    }
+  }
+}
+
 main {
   font-family: Commissioner;
   font-weight: 400;
@@ -18,6 +26,12 @@ main {
     line-height: 59px;
   }
 }
+.swiper {
+  button {
+    color: $colorMain;
+    background-color: transparent;
+}
+}
 .btn {
   width: 100%;
   color: #000;
@@ -35,7 +49,16 @@ main {
     font-weight: 500;
     line-height: 24px;
   }
+  @media (min-width:$tablet){
+     &:hover{
+      text-decoration: underline;
+      background-color: #ffff3b;
+    }
+    &:active {
+      background-color: #f3d702;
 
+    }
+  }
 }
 
 .fieldsrt-form {

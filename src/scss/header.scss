@@ -1,6 +1,7 @@
 .header {
 	width: 100%;
 	position: absolute;
+	z-index: 1;
 	&__container {
 	}
 	&__body {
@@ -39,6 +40,9 @@
 		z-index: 1;
 		gap: 8px;
 		flex-shrink: 0;
+		a {
+			color: $colorMain;
+		}
 	}
 	&__icon {
 		@media (max-width: 375px){
