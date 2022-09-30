@@ -1,0 +1,45 @@
+.footer {
+    background: #0A2530;
+    &__container {
+    }
+    &__body {
+        padding: 30px 0;
+        text-align: center;
+        @media (min-width:$mobile){
+             display: flex;
+             flex-flow: row nowrap;
+             justify-content: space-between;
+             align-items: center;
+             gap: 20px;
+        }
+    }
+    &__logo {
+        margin-bottom: rem(30);
+        @media (min-width:$mobile){
+            max-width: rem(102);
+        }
+    }
+    &__list {
+        @media (min-width:$mobile){
+            flex: 1 0 auto;
+        }
+    }
+    &__item {
+        margin-bottom: rem(20);
+        @media (min-width:$mobile){
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 15px;
+            }
+        }
+    }
+    &__link {
+        color: white;
+        @include adaptiveValue("font-size", 24, 16);
+    }
+    &__image {
+        @media (min-width:$mobile){
+            max-width: rem(187);
+        }
+    }
+}

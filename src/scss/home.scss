@@ -522,6 +522,7 @@
 }
 
 .reviews {
+    margin-bottom: rem(60);
     &__container {
     }
     &__body {
@@ -551,6 +552,7 @@
         }
         &__boy {
             margin-bottom: rem(60);
+            max-width: rem(473);
         }
         &__map {
         }

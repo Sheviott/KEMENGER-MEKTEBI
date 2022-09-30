@@ -29,12 +29,12 @@
           <ul class="menu__list">
             <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
             <li class="menu__item">
-              <a href="" class="menu__link">Каталог</a>
+              <a href="#catalog" class="menu__link">Каталог</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Сертификаты</a>
+              <a href="#certificates" class="menu__link">Сертификаты</a>
             </li>
-            <li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+            <li class="menu__item"><a href="#reviews" class="menu__link">Отзывы</a></li>
             <li class="menu__item">
               <a href="" class="menu__link">Контакты</a>
             </li>
@@ -186,7 +186,7 @@
             </div>
           </div>
         </section>
-        <section class="catalog">
+        <section id="catalog" class="catalog">
           <div class="catalog__container">
             <div class="catalog__body">
               <div class="catalog__title title">Каталог</div>
@@ -506,7 +506,7 @@
             </div>
           </div>
         </section>
-        <section class="certificates">
+        <section id="certificates" class="certificates">
           <div class="certificates__container">
             <div class="certificates__body">
               <div class="certificates__title title">Наши сертификаты</div>
@@ -533,7 +533,7 @@
             <img src="images/main/certificates/yellow-circle.svg" alt="" />
           </div>
         </section>
-        <section class="reviews">
+        <section id="reviews" class="reviews">
           <div class="reviews__container">
             <div class="reviews__body">
               <div class="reviews__title title">Отзывы</div>
@@ -648,7 +648,7 @@
               </div>
 
               <div class="reviews__contacts contacts">
-                <div class="contacts__row">
+                <div class="contacts__row contacts__row--first">
                   <div class="contacts__info info">
                     <div class="info__title title">Наши контакты</div>
                     <div class="info__content">
@@ -701,7 +701,31 @@
         </section>
       </main>
       <footer class="footer">
-  <div>Hello footer!</div>
+  <div class="footer__container">
+    <div class="footer__body">
+      <div class="footer__logo">
+        <img src="images/header/logo.png" alt="">
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item"><a href="" class="footer__link">О нас</a></li>
+        <li class="footer__item">
+          <a href="#catalog" class="footer__link">Каталог</a>
+        </li>
+        <li class="footer__item">
+          <a href="#certificates" class="footer__link">Сертификаты</a>
+        </li>
+        <li class="footer__item">
+          <a href="#reviews" class="footer__link">Отзывы</a>
+        </li>
+        <li class="footer__item">
+          <a href="" class="footer__link">Контакты</a>
+        </li>
+      </ul>
+      <div class="footer__image">
+        <img src="images/footer/studio.png" alt="">
+      </div>
+    </div>
+  </div>
 </footer>
  <div id="form" class="popup">
   <div class="popup__body">
