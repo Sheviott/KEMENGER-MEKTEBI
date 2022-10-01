@@ -45,9 +45,9 @@ export let bodyLock = (delay = 500) => {
 }
 
 
+const menuBody = document.querySelector(".menu__body");
+const iconMenu = document.querySelector(".icon-menu");
 export function menuInit() {
-	const iconMenu = document.querySelector(".icon-menu");
-	const menuBody = document.querySelector(".menu__body");
 	if (iconMenu) {
 		iconMenu.addEventListener("click", function (e) {
 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
@@ -57,14 +57,23 @@ export function menuInit() {
 			}
 		});
 	};
+	const menuLink = document.querySelectorAll(".menu__link");
+	menuLink.forEach(element => {
+		element.addEventListener("click", function (e) {
+			// bodyUnlock(500);
+			menuClose();
+		});
+	});
+
 }
-export function menuOpen() {
-	bodyLock();
-	document.documentElement.classList.add("menu-open");
-}
+// export function menuOpen() {
+// 	bodyLock();
+// 	document.documentElement.classList.add("menu-open");
+// }
 export function menuClose() {
 	bodyUnlock();
-	document.documentElement.classList.remove("menu-open");
+	menuBody.classList.remove("__active-menu--burger");
+	iconMenu.classList.remove("menu-open");
 }
 
 //SHOWMORE

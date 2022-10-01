@@ -83,7 +83,10 @@
 }
 
 .directions {
-    margin-bottom: rem(180);
+    margin-bottom: rem(60);
+    @media (min-width:$mobile){
+        margin-bottom: rem(180);
+    }
     &__container {
     }
     &__body {
@@ -526,14 +529,13 @@
     &__container {
     }
     &__body {
-        position: relative;
     }
     &__title {
         text-align: center;
         margin-bottom: rem(60);
     }
     &__slider {
-        margin-bottom: rem(71);
+        // margin-bottom: rem(71);
     }
     &__wrapper {
         width: 1200px;
@@ -545,16 +547,39 @@
         flex-flow: column nowrap;
     }
     .contacts {
-
         &__row {
+            &--first {
+                position: relative;
+                padding: 71px 0 57px 0;
+                @media (min-width: $tablet) {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: flex-end;
+                    gap: 60px;
+                }
+            }
         }
         &__info {
+            max-width: rem(590);
+            max-height: 540px;
+            @media (min-width:$mobile){
+                flex: 1 0 auto;
+
+            }
         }
         &__boy {
             margin-bottom: rem(60);
-            max-width: rem(473);
+            // max-width: rem(473);
+            @media (min-width:$mobile){
+                flex: 1 0 auto;
+                text-align: center;
+            }
+            @media (max-width:$mobile){
+                 display: none;
+            }
         }
         &__map {
+            text-align: center;
         }
     }
 
@@ -564,7 +589,7 @@
                 left: -3px;
             }
             .swiper-button-next {
-                right: -2px;
+                right: 0px;
             }
         }
     }
@@ -613,9 +638,14 @@
         color: white;
         padding: 25px 40px;
         margin-bottom: rem(20);
+        margin: 0 auto;
+        @media (min-width:$mobile){
+             padding: 23px 40px 38px 40px;
+        }
         &__title {
             text-align: center;
-            margin-bottom: rem(10);
+            margin-bottom: rem(15);
+            font-size: rem(48);
         }
         &__content {
         }
@@ -627,24 +657,40 @@
                 font-weight: 400;
                 line-height: 30px;
             }
+            @media (min-width: $mobile) {
+                line-height: 30px;
+            }
         }
         &__decor {
-            @media (max-width:$mobile){
-                 display: none;
+            @media (max-width: $mobile) {
+                display: none;
             }
         }
         &__blue-vector {
+            position: absolute;
+            top: 180px;
+            z-index: -1;
+            left: 60px;
         }
     }
     .map-contacts {
+        position: relative;
         &__decor {
-            @media (max-width:$mobile){
+            @media (max-width: $mobile) {
                 display: none;
-           }
+            }
+            @media (min-width:$mobile){
+                position: absolute;
+                z-index: -1;
+            }
         }
         &__yellow-vector {
+            top: 60px;
+            left: 120px;
         }
         &__blue-vector {
+            bottom: 60px;
+            right: 140px;
         }
     }
 }

@@ -1,4 +1,4 @@
-.header {
+.header, .footer {
   @media (min-width:$tablet){
     a {
       &:hover{text-decoration: underline;}
