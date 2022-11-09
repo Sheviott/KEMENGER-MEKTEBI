@@ -21,7 +21,7 @@ main {
   line-height: 34px;
   letter-spacing: 0em;
   @include adaptiveValue("font-size", 48, 28);
-  @include adaptiveValue("line-height", 59, 34);
+  @include adaptiveValue("line-height", 59, 40);
   @media (min-width: $mobile) {
     line-height: 59px;
   }
@@ -79,7 +79,6 @@ fieldset {
 }
 label {
   position: absolute;
-  // top: 0;
   left: 0;
   padding: rem(10);
   transition: all 0.3s ease 0s;
@@ -120,7 +119,6 @@ input[type="radio"] {
   width: 0;
   height: 0;
   border: 0;
-  // @extend .visually-hidden;
 }
 summary {
   display: inline-block; // убирает стрелки

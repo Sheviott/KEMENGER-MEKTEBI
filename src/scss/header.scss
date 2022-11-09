@@ -2,21 +2,11 @@
 	width: 100%;
 	position: absolute;
 	z-index: 1;
-	&__container {
-	}
 	&__body {
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: center;
-		// gap: 15px;
 		@include adaptiveValue("gap", 101, 10);
-		@media (min-width:$mobile){
-			//  gap: 45px;
-		}
-		@media (min-width:$tablet){
-			// gap: 101px;
-		}
-
 	}
 	&__logo {
 		flex: 1 0 auto;
@@ -48,8 +38,6 @@
 		@media (max-width: 375px){
 			display: none;
 		}
-	}
-	&__number {
 	}
 }
 .menu {
@@ -90,12 +78,6 @@
 			gap: 20px;
 		}
 	}
-	&__icon {
-	}
-	&__body {
-	}
-	&__item {
-	}
 	&__link {
 		color: black;
 	}
@@ -135,9 +117,6 @@
 			span {
 				width: 0;
 			}
-			&::before,
-			&::after {
-			}
 			&::before {
 				top: calc(50% - rem(1));
 				transform: rotate(-45deg);
@@ -148,10 +127,4 @@
 			}
 		}
 	}
-}
-.lock-padding {
-}
-.menu {
-}
-.icon-menu {
 }

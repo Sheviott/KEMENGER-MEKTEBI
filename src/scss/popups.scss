@@ -11,7 +11,7 @@
   overflow-x: hidden;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.8s ease 0s;
+  transition: all 0.5s ease 0s;
   &__body {
     min-height: 100%;
     display: flex;
@@ -62,14 +62,11 @@
 }
 //========================================================================================================================================================
 //ПОПАП ФОРМА
-#form.popup {
-}
 .popup {
   &__content {
     max-width: rem(300);
   }
-  &__body {
-  }
+
   &__title {
     font-family: Commissioner;
     font-size: 24px;
@@ -81,14 +78,7 @@
       color: #018fa3;
     }
   }
-  &__form {
-  }
-}
-.icon-close {
-}
-.close-popup {
-}
-.close {
+
 }
 .form {
   &__input {
@@ -101,16 +91,11 @@
     @extend input;
     height: 120px !important;
   }
-  &__button {
-  }
   ::placeholder {
     color: #c2c2c2;
   }
 }
-.btn {
-}
-.popup-link {
-}
+
 //========================================================================================================================================================
 //ПОПАП СПАСИБО
 #thanks.popup {
@@ -141,10 +126,4 @@
       margin-bottom: rem(16);
     }
   }
-}
-.icon-close {
-}
-.close-popup {
-}
-.close {
 }

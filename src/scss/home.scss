@@ -23,14 +23,6 @@
         z-index: -1;
         height: 100%;
         margin-top: -80px;
-        &::after {
-            // position: absolute;
-            // content: url(../images/main/main-screen/5.png);
-            // bottom: 150px;
-            // z-index: -10;
-            // right: 50%;
-            // background-size: 10px 10px;
-        }
         @media (min-width: $mobileSmall) {
             margin-top: -120px;
         }
@@ -61,12 +53,6 @@
         bottom: 20px;
         right: 40px;
     }
-    &__background--vector {
-    }
-    &__container {
-    }
-    &__body {
-    }
     &__title {
         margin-bottom: rem(44);
         max-width: rem(670);
@@ -78,8 +64,7 @@
         max-width: rem(532);
         margin-bottom: rem(44);
     }
-    &__button {
-    }
+
 }
 
 .directions {
@@ -87,12 +72,7 @@
     @media (min-width:$mobile){
         margin-bottom: rem(180);
     }
-    &__container {
-    }
-    &__body {
-    }
-    &__info {
-    }
+
     &__row {
         display: flex;
         flex-flow: column nowrap;
@@ -204,9 +184,6 @@
             }
         }
     }
-    &__content {
-    }
-
     .content-circle {
         text-align: center;
         position: relative;
@@ -245,10 +222,7 @@
                 max-width: rem(150);
             }
         }
-        &__icon {
-        }
-        &__name {
-        }
+
         &__center-image {
             margin-bottom: rem(45);
             img {
@@ -278,8 +252,7 @@
 .catalog {
     background-color: #f6faff;
     text-align: center;
-    &__container {
-    }
+
     &__body {
         padding-bottom: 80px;
         padding-top: 66px;
@@ -291,13 +264,8 @@
     &__slider {
         width: 100%;
         height: 100%;
-        // padding: 68px 0 80px 0;
-        @media (min-width: $tablet) {
-            // padding: 68px 0 80px 0;
-        }
     }
-    &__wrapper {
-    }
+
     &__slide {
         &:nth-child(1) {
             .slide-catalog__head,
@@ -336,25 +304,16 @@
             }
         }
     }
-    .swiper {
-    }
+
     .swiper-wrapper {
         display: flex;
         align-items: stretch;
     }
     .swiper-slide {
-        // max-width: rem(387);
         flex: 1 0 auto;
         height: auto;
     }
-    .swiper-pagination {
-    }
-    .swiper-button-prev {
-    }
-    .swiper-button-next {
-    }
-    .swiper-scrollbar {
-    }
+
     .slide-catalog {
         &__body {
             margin: 0 auto;
@@ -402,26 +361,19 @@
         &__ages {
             margin-bottom: rem(8);
         }
-        &__hours {
-        }
+
         &__info {
             margin-bottom: rem(60);
             flex: 1 0 auto;
         }
-        &__list {
-        }
+
         &__item {
             margin-bottom: rem(24);
         }
         &__button {
             color: white;
         }
-        &__showmore {
-        }
-        &__showmore-content {
-        }
-        &__item {
-        }
+
         &__showmore-button {
             display: none;
             visibility: hidden;
@@ -458,33 +410,24 @@
         right: 50%;
         transform: translate(50%, 0px);
         @media (min-width: 768.99px) {
-            // top: 70px;
-            // top: 0;
-            // left: -270px;
-            // top: 70px;
-            // right: none;
             transform: translate(0px, 0px);
             right: auto;
             left: -40px;
             top: 235px;
         }
     }
-
-    .btn {
-    }
 }
 
 .certificates {
     position: relative;
-    &__container {
-    }
+
     &__body {
         padding-top: 60px;
         padding-bottom: 115px;
         text-align: center;
     }
     &__title {
-        margin-bottom: rem(60);
+        margin-bottom: rem(40);
     }
     &__content {
         display: grid;
@@ -526,22 +469,14 @@
 
 .reviews {
     margin-bottom: rem(60);
-    &__container {
-    }
-    &__body {
-    }
     &__title {
         text-align: center;
-        margin-bottom: rem(60);
-    }
-    &__slider {
-        // margin-bottom: rem(71);
+        margin-bottom: rem(40);
     }
     &__wrapper {
         width: 1200px;
     }
-    &__slide {
-    }
+
     &__contacts {
         display: flex;
         flex-flow: column nowrap;
@@ -604,8 +539,7 @@
                 padding: 36px 24px 36px 35px;
             }
         }
-        &__item {
-        }
+
         &__row {
             display: flex;
             flex-flow: row nowrap;
@@ -628,8 +562,7 @@
                 font-size: rem(24);
             }
         }
-        &__comment {
-        }
+
     }
 
     .info {
@@ -645,9 +578,8 @@
         &__title {
             text-align: center;
             margin-bottom: rem(15);
-            font-size: rem(48);
-        }
-        &__content {
+            @include adaptiveValue("font-size", 48, 38);
+            line-height: 40px;
         }
         &__row {
             font-weight: 600;

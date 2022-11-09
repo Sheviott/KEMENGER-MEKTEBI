@@ -1,5 +1,4 @@
 const swiper = new Swiper('.catalog__slider', {
-    //modules: [Navigation, Pagination],
     spaceBetween: 15,
     breakpoints: {
       320: {
@@ -18,7 +17,6 @@ const swiper = new Swiper('.catalog__slider', {
     }
   });
 const swiperReviews = new Swiper('.reviews__slider', {
-    //modules: [Navigation, Pagination],
     spaceBetween: 20,
     breakpoints: {
       320: {
